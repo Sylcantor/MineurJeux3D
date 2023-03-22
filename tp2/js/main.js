@@ -138,17 +138,6 @@ function createLights(scene) {
     // i.e sun light with all light rays parallels, the vector is the direction.
     // create a light
     let light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-
-    // Créer une lumière ponctuelle
-    const pointLight = new BABYLON.PointLight("pointLight", new BABYLON.Vector3(0, 50 - 0.5, 0), scene);
-
-    // Définir l'intensité de la lumière
-    pointLight.intensity = 1;
-
-    // Ajuster la distance maximale de la lumière
-    pointLight.range = 10;
-
-
 }
 
 function createFreeCamera(scene) {
